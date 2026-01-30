@@ -1,8 +1,108 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title> <my Temporary home
-              <head>
-      <h1> hi</h1>
-    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eunjung — FinTech & Big Data | CPA (Korea)</title>
+    <meta name="description" content="Eunjung — FinTech & Big Data student at Seoul National University. CPA (Korea). Seeking roles in accounting services.">
+    <style>
+      :root{--bg:#f7f8fb;--card:#fff;--text:#0f1724;--accent:#0b74de;--muted:#6b7280}
+      *{box-sizing:border-box}
+      body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:var(--text); line-height:1.5}
+      .container{max-width:900px;margin:36px auto;padding:24px}
+      header.hero{display:flex;gap:20px;align-items:center}
+      .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+      h1{margin:0;font-size:28px}
+      p.lead{margin:6px 0 16px;color:var(--muted)}
+      .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,30,0.06);margin-bottom:16px}
+      .grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+      @media (max-width:800px){.grid{grid-template-columns:1fr}}
+      ul.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+      ul.skills li{background:#eef2ff;color:#3730a3;padding:6px 10px;border-radius:999px;font-size:14px}
+      .button{display:inline-block;background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+      footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+      .meta{color:var(--muted);font-size:14px}
+      a.inline{color:var(--accent);text-decoration:none}
+    </style>
   </head>
+  <body>
+    <div class="container">
+      <header class="hero card">
+        <div style="display:flex;gap:16px;align-items:center">
+          <div class="avatar">EJ</div>
+          <div>
+            <h1>Eunjung</h1>
+            <p class="lead">FinTech & Big Data student at Seoul National University (SNU) • CPA (Korea) • Interested in accounting service roles</p>
+            <div class="meta">Major: Political Science & Economics</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="card">
+            <h2>About me</h2>
+            <p>I study FinTech and Big Data at <strong>Seoul National University</strong>. I have a license as <strong>CPA (Korea)</strong>, and I am currently seeking opportunities in accounting services where I can combine accounting knowledge with data analysis and FinTech skills.</p>
+            <p>I am passionate about applying analytics to financial processes, automating reporting, and helping organizations make data-driven accounting decisions.</p>
+          </section>
+
+          <section class="card">
+            <h2>Experience & Projects</h2>
+            <p class="meta">(If you have internships, projects, or relevant coursework, list them here.)</p>
+            <ul>
+              <li>Example project: Financial data analysis using Python and SQL — expense categorization and visualization.</li>
+              <li>Example project: Built a small dashboard for accounting KPIs using Tableau / Power BI.</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Skills</h2>
+            <ul class="skills">
+              <li>Accounting (CPA)</li>
+              <li>Data Analysis</li>
+              <li>Python (pandas)</li>
+              <li>SQL</li>
+              <li>FinTech concepts</li>
+              <li>Tableau / Power BI</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Looking for</h2>
+            <p>I am looking for roles in accounting services, financial reporting, audit support, or data-related accounting positions where I can leverage my CPA qualification and data skills.</p>
+            <a class="button" href="#contact">Contact me</a>
+          </section>
+        </main>
+
+        <aside>
+          <div class="card">
+            <h3>Education</h3>
+            <p><strong>Seoul National University</strong><br>Studying FinTech & Big Data<br>Major: Political Science & Economics</p>
+          </div>
+
+          <div class="card">
+            <h3>Contact</h3>
+            <p class="meta">Email: <a class="inline" href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p class="meta">LinkedIn: <a class="inline" href="#">linkedin.com/in/your-profile</a></p>
+            <p class="meta">GitHub: <a class="inline" href="#">github.com/your-username</a></p>
+            <p style="margin-top:12px"><a class="button" href="mailto:your.email@example.com?subject=Job%20Opportunity">Email me</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Resume</h3>
+            <p class="meta">(Upload your resume to the project folder and link it here.)</p>
+            <p><a class="button" href="#">Download PDF</a></p>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div>© <span id="year"></span> Eunjung — FinTech & Big Data • CPA (Korea)</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
